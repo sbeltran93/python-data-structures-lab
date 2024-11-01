@@ -45,10 +45,12 @@ print('Exercise 1:', manage_students())
 # Create a variable named meal and assign an empty string to it.
 # Use a for loop to iterate over the strings in foods and append each string to meal.
 
+foods = ('pizza', 'mac & cheese', 'chicken')
+
 def combine_foods():
     # your code here
 #tuple foods = ( food1, food2, food3)
-  foods = ('pizza', 'mac & cheese', 'chicken')
+  
 #empty_meal= ""
   meal = ''
   #loop over foods to add it to meals
@@ -62,18 +64,34 @@ def combine_foods():
 print('Exercise 2:', combine_foods())
 
 
+# Exercise 3: Slicing Tuples
+#
+# Using the slice operator, assign a new tuple containing only the last two food strings in the foods to a variable named last_two_foods.
+
+def slice_foods():
+    # your code here
+  #tuple for last_two_foods = ()
+  last_two_foods = foods[-2:]
+  
+  #slice method
+  return last_two_foods
+# Call the function and print the result
+print('Exercise 3:', slice_foods())
+
+
+
+
 # Exercise 4: Dictionaries and String Formatting
 #
 # Create a dictionary named home_town containing the keys of city, state, and population.
 # Using the home_town dictionary, assign to a variable named home_town_message a string with this format: “I was born in <city>, <state> - population of <population>”
 
+#moved home_town dictionary above function to use globally for 4 & 5.. should I have done this a different way?
 home_town = {
       'city': 'Taunton',
       'state': 'Massachusetts',
       'population': 60000,
       }
-#moved home_town dictionary above function to use globally for 4 & 5.. should I have done this a different way?
-
 
 def hometown_info():
     # your code here
